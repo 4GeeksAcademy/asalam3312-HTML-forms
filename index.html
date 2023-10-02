@@ -10,58 +10,68 @@
     <script src="https://kit.fontawesome.com/5c97f0a345.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-    <div class="conteiner-flex rounded border border-secondary M-4">
-        <body class="bg light">
-            <div class="bg-light border border-ligt-solid ps-3">
-                <h1>
-                Payment form exaple
-                </h1>
-            </div>
-            
-            <form>
-                <!--1st 3 inputs-->
-                <div class="row m-1">
-                    <div class="col-sm-12"><!--color distinto al base?-->
-                        <input id="Card #" type="text" class="form-control bg-danger"
-                            placeholder="Some fields are missing" />
-                    </div>
 
+<body class="">
+    <div class="container rounded border border-light-solid p-0">
+
+        <div class="bg-light border border-light-solid mb-3">
+            <h1>
+                Payment form exaple
+            </h1>
+        </div>
+
+        <form>
+            <!--1st 3 inputs-->
+            <div class="row m-1">
+                <div class="col-sm-12"><!--color distinto al base?-->
+                    <fieldset disabled>
+                        <div class="mb-3">
+                            <div class="alert alert-danger"><strong>Some fields are missing</strong></div>
+                        </div>
                 </div>
-                <div class="row m-1">
-                    <div class="col-sm-4">
-                        <fieldset>
-                            <label for="Card #" class="form-label">Card #</label>
-                            <input id="Card #" type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX" />
-                        </fieldset>
-                    </div>
-                    <div class="col-sm-4">
-                        <fieldset>
-                            <label for="CVC" class="form-label">CVC</label>
-                            <input id="CVC" type="pasword" class="form-control" placeholder="0000" />
-                        </fieldset>
-                    </div>
-                    <div class="col-sm-4">
-                        <fieldset>
-                            <Label for="Amount" class="form-label">Amount</Label>
-                            <input id="Amount" type="text" class="form-control" placeholder="Amount"><i
-                                class="fa-solid fa-dollar-sign" style="color: #000000;"></i>
-                        </fieldset>
-                    </div>
+            </div>
+            <div class="row m-1">
+                <div class="col-sm-4">
+                    <fieldset>
+                        <label for="Card #" class="form-label">Card #</label>
+                        <input id="Card #" type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX" />
+                    </fieldset>
                 </div>
-                <div class="d-flex m-3">
-                    <div class="row">
-                        <fieldset class="col-sm-11">
-                            <Label for="fname" class="form-label">First name</Label>
-                            <input id="fname" type="text" class="form-control" />
-                        </fieldset>
-                        <fieldset class="col-sm-11">
-                            <Label for="city" class="form-label">City</Label>
-                            <input id="city" type="text" class="form-control" />
-                        </fieldset>
-                        <fieldset class="Payment mt-1 col-sm-6">
-                            <Label for="we-acept" class="form-label">We acept:</Label>
-                            <div class="bg-secondary rounded p-2">
-                                <input id="we-acept" type="radio" name="payment" /><i class="fa-brands fa-cc-visa"
+                <div class="col-sm-4">
+                    <fieldset>
+                        <label for="CVC" class="form-label">CVC</label>
+                        <input id="CVC" type="pasword" class="form-control" placeholder="0000" />
+                    </fieldset>
+                </div>
+                <div class="col-sm-4">
+                    <fieldset>
+                        <!-- <label for="Amount" class="form-label">Amount</label>
+                        <spam>
+                            <i class="fa-solid fa-dollar-sign" style="color: #000000;"></i>
+                            <input id="Amount" type="text" class="form-control" placeholder="Amount">
+                    </spam> -->
+                    <label for="Amount" class="form-label">Amount</label>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-dollar-sign" style="color: #000000;"></i></span>
+                        <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Nombre de usuario" aria-describedby="addon-wrapping">
+                      </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="d-flex m-3">
+                <div class="row">
+                    <fieldset class="col-sm-11">
+                        <Label for="fname" class="form-label">First name</Label>
+                        <input id="fname" type="text" class="form-control" />
+                    </fieldset>
+                    <fieldset class="col-sm-11">
+                        <Label for="city" class="form-label">City</Label>
+                        <input id="city" type="text" class="form-control" />
+                    </fieldset>
+                    <fieldset class="Payment mt-1 col-sm-6">
+                        <Label for="we-acept" class="form-label">We acept:</Label>
+                        <div class="bg-secondary rounded p-2">
+                            <input id="we-acept" type="radio" name="payment" /><i class="fa-brands fa-cc-visa"
                                 style="color: #ffffff;"></i>
                             <input id="we-acept" type="radio" name="payment" /><i class="fa-brands fa-cc-mastercard"
                                 style="color: #ffffff;"></i>
@@ -69,50 +79,55 @@
                                 style="color: #ffffff;"></i>
                             <input id="we-acept" type="radio" name="payment" /><i class="fa-brands fa-cc-amex"
                                 style="color: #ffffff;"></i>
-                            </div>      
-                        </fieldset>
-                    </div>
-                    <div class="row">
-                        <fieldset>
-                            <Label for="fname" class="form-label">Last Name</Label>
-                            <input id="fname" type="text" class="form-control" />
-                        </fieldset>
-                        <div class="d-flex row">
-                            <fieldset class="col-sm-6"><!--cómo modificar el tamaño de col adecuadamente-->
-                                <label for="exampleDataList" class="form-label">State</label>
-                                <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                    placeholder="pick a state">
-                                <datalist id="datalistOptions">
-                                    <option value="San Francisco">
-                                    <option value="New York">
-                                    <option value="Seattle">
-                                    <option value="Los Angeles">
-                                    <option value="Chicago">
-                                </datalist>
-                                </select>
-                            </fieldset>
-                            <fieldset class="col-sm-6">
-                                <Label for="fname" class="form-label">Postal Code</Label>
-                                <input id="fname" class="form-control" />
-                            </fieldset>
                         </div>
-                        <fieldset>
-                            <Label for="message" class="form-label">Message</Label>
-                            <textarea id="message" type="text" class="form-control"></textarea>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <fieldset>
+                        <Label for="fname" class="form-label">Last Name</Label>
+                        <input id="fname" type="text" class="form-control" />
+                    </fieldset>
+                    <div class="d-flex">
+                        <fieldset class="col-sm-6 pe-1"><!--cómo modificar el tamaño de col adecuadamente-->
+                            <label for="exampleDataList" class="form-label">State</label>
+                            <input class="form-control w-100" list="datalistOptions" id="exampleDataList"
+                                placeholder="pick a state">
+                            <datalist id="datalistOptions">
+                                <option value="San Francisco">
+                                <option value="New York">
+                                <option value="Seattle">
+                                <option value="Los Angeles">
+                                <option value="Chicago">
+                            </datalist>
+                            </select>
+                        </fieldset>
+                        <fieldset class="col-sm-6 ps-1">
+                            <label for="fname" class="form-label">Postal Code</label>
+                            <input id="fname" class="form-control me-5" />
                         </fieldset>
                     </div>
+                    <fieldset>
+                        <Label for="message" class="form-label">Message</Label>
+                        <textarea id="message" type="text" class="form-control"></textarea>
+                        <div id="emailHelp" class="form-text">Add any notes here.</div>
+                    </fieldset>
                 </div>
-                <div class="d-flex m-3 float-end">
-                    <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+            <div class="border-top border border-light-solid bg-light p-3">
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary me-3">Cancel</button>
                     <button type="button" class="btn btn-primary">Send</button>
                 </div>
-            </form>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-                integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-                integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-                crossorigin="anonymous"></script>
-        </body>
+            </div>
+
+        </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
